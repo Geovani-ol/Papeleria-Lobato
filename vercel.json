@@ -1,0 +1,12 @@
+{
+  "framework": "astro",
+  "buildCommand": "pnpm run build",
+  "devCommand": "pnpm run dev",
+  "installCommand": "pnpm install",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "github": {
+    "silent": true
+  }
+}
+
