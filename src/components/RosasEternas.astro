@@ -1,0 +1,203 @@
+---
+import Header from "./Header.astro"
+
+const photos = [
+    {
+        image: '/assets/Imagen1.jpg',
+        thumbnail: '/assets/Imagen1.jpg',
+        description: 'Corazón rojo - Papel crepe',
+        price: '$150',
+        status: 'Disponible'
+    },
+    {
+        image: '/assets/Imagen2.jpg',
+        thumbnail: '/assets/Imagen2.jpg',
+        description: 'Rosa gigante - Limpiapipas',
+        price: '$300',
+        status: 'Disponible'
+    },
+    {
+        image: '/assets/Imagen3.jpg',
+        thumbnail: '/assets/Imagen3.jpg',
+        description: 'Ramo de novia - Liston - 8 Rosas',
+        price: '$250',
+        status: 'Vendido'
+    },
+    {
+        image: '/assets/Imagen4.jpg',
+        thumbnail: '/assets/Imagen4.jpg',
+        description: 'Corazón blanco con rosa roja al centro - Papel crepe',
+        price: '$160',
+        status: 'Disponible'
+    },
+    {
+        image: '/assets/Imagen5.jpg',
+        thumbnail: '/assets/Imagen5.jpg',
+        description: 'Mini ramo de rosas - Liston - 7 rosas',
+        price: '$40',
+        status: 'Vendido'
+    },
+    {
+        image: '/assets/Imagen6.jpg',
+        thumbnail: '/assets/Imagen6.jpg',
+        description: 'Ramo de pañales - 69 pañales',
+        price: '$1500',
+        status: 'Vendido'
+    },
+    {
+        image: '/assets/Imagen7.jpg',
+        thumbnail: '/assets/Imagen7.jpg',
+        description: 'Rosa invividual - Liston',
+        price: '$35',
+        status: 'Disponible'
+    },
+    {
+        image: '/assets/Imagen8.jpg',
+        thumbnail: '/assets/Imagen8.jpg',
+        description: 'Ramo de rosas - Fomi - 7 rosas',
+        price: '$160',
+        status: 'Disponible'
+    },
+    {
+        image: '/assets/Imagen9.jpg',
+        thumbnail: '/assets/Imagen9.jpg',
+        description: 'Ramo de rosas Hello Kitty - Liston - 12 rosas',
+        price: '$300',
+        status: 'Disponible'
+    },
+    {
+        image: '/assets/Imagen10.jpg',
+        thumbnail: '/assets/Imagen10.jpg',
+        description: 'Girasol - Liston',
+        price: '$70',
+        status: 'Disponible'
+    }
+];
+
+const preciosRosas = [
+    { cantidad: 1, precio: 35 },
+    { cantidad: 3, precio: 100 },
+    { cantidad: 7, precio: 230 },
+    { cantidad: 8, precio: 250 },
+    { cantidad: 10, precio: 280 },
+    { cantidad: 12, precio: 300 }
+];
+---
+
+<Header />
+
+
+
+<main class="pt-20">
+
+    <section class="py-14" class="min-h-screen">
+        <div class="max-w-screen-xl mx-auto md:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-x-12 px-5 sm:px-6 md:px-0">
+                <div class="flex-1 lg:block hidden">
+                    <img src="/assets/Icons.jpg" class="md:max-w-lg sm:rounded-lg" alt="Papelería Lobato">
+                </div>
+                <div class="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl text-center lg:text-left">
+                    <h3 class="text-tan font-semibold">
+                        Rosas Eternas
+                    </h3>
+                    <p class="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                        Arte y Creatividad en Cada Pétalo
+                    </p>
+                    <p class="mt-3 text-gray-600">
+                        Nuestras Rosas Eternas están elaboradas a mano utilizando materiales como listón, limpiapipas, fomi y papel crepé. Cada rosa es una muestra de dedicación y creatividad, ofreciendo una belleza que perdura en el tiempo.
+                    </p>
+                    <p class="mt-3 text-gray-600">
+                        Estas flores eternas son ideales para decorar espacios, regalar en ocasiones especiales o simplemente para disfrutar de su encanto único. Su elaboración cuidadosa garantiza una apariencia delicada y elegante que realza cualquier ambiente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="container mx-aut mt-20 py-8 min-h-screen scroll-mt-20">
+        <h1 class="text-3xl font-serif text-center">Galería de Fotos</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 m-8 sm:m-8 md:m-10 lg:m-20">
+            {photos.map((photo) => (
+                <div class="rounded shadow overflow-hidden">
+                    <img src={photo.thumbnail} alt={photo.description} class="w-full h-80 object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700">{photo.description}</p>
+                        <p class="text-xl font-bold mt-2">{photo.price} MXN</p>
+                        <p class="text-charcoal">{photo.status}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </section>
+
+    <section id="precios" class="py-14 mx-8">
+        <div class="max-w-screen-md mx-auto text-center">
+            <h2 class="text-3xl font-serif my-20">Lista de Precios</h2>
+            <ul class="space-y-4">
+                {preciosRosas.map((item) => (
+                    <li class="flex justify-between bg-white p-4 rounded shadow shadow-goal">
+                        <span>{item.cantidad} rosa{item.cantidad > 1 ? 's' : ''}</span>
+                        <span>${item.precio} MXN</span>
+                    </li>
+                ))}
+            </ul>
+            <p class="mt-5 text-gray-600">
+                Para más información contáctenos
+            </p>
+        </div>
+    </section>
+
+
+    <section id="contacto-ubicacion" class="min-h-screen flex flex-col items-center justify-center py-8 mx-8">
+        <h1 class="text-3xl font-serif text-center mb-20">Contacto y Ubicación</h1>
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-8 w-full max-w-screen-lg mx-auto">
+            <!-- Formulario de contacto -->
+            <div class="bg-charcoal p-8 rounded-lg shadow-lg w-full max-w-md text-white">
+                <h2 class="text-2xl font-bold mb-6 text-goal text-center">Contáctanos</h2>
+                <form id="contact-form" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium">Ingresa tu Nombre:</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-goal focus:border-goal" placeholder="Ejemplo: Geovani" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-goal hover:bg-tan focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-goal">
+                            Enviar mensaje por WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Mapa -->
+            <div class="w-full max-w-md">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.037713994916!2d-101.17500392505559!3d19.71101843173115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0e1a0de6256d%3A0x810ff95a701a77a9!2sAguascalientes%2045%2C%20Isaac%20Arriaga%2C%2058210%20Morelia%2C%20Mich.!5e0!3m2!1ses!2smx!4v1741642470258!5m2!1ses!2smx" width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+<script>
+    document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var nameInput = document.getElementById('name') as HTMLInputElement;
+
+        var name = nameInput.value.trim();
+
+        if (name === '') {
+            alert('Por favor, completa todos los campos');
+            return;
+        }
+
+        var phoneNumber = '524431874839'; // Número de teléfono en formato internacional
+
+        var fullMessage = `Hola, soy ${name}. Me gustaría obtener más información sobre las Rosas Eternas.`;
+
+        var encodedMessage = encodeURIComponent(fullMessage);
+
+        var whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+        window.open(whatsappURL, '_blank');
+    });
+</script>

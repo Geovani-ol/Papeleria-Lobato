@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+    --color-charcoal: #122620;
+    --color-charcoal-light: #1A3A3A;
+    --color-goal: #D6AD60;
+    --color-goal-light: #E8CFA3;
+    --color-tan: #B68D40;
+}

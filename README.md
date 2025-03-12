@@ -1,48 +1,64 @@
-# Astro Starter Kit: Basics
+# 🏢 Papelería Lobato
 
-```sh
-pnpm create astro@latest -- --template basics
+Bienvenido al repositorio del sitio web de **Papelería Lobato**, un negocio que ofrece artículos de papelería y un servicio de rosas eternas.
+
+## 📄 Descripción
+
+Este es el sitio web oficial de **Papelería Lobato**, desarrollado con las siguientes tecnologías:
+
+- **Astro** ✨: Framework para la generación de sitios web estáticos.
+- **PNPM** 🛠️: Gestor de paquetes rápido y eficiente.
+- **Tailwind CSS** 🛀: Para un diseño moderno y responsivo.
+
+## 📚 Estructura del Proyecto
+
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+├── public/                     # Archivos estáticos
+│                    
+├── src/                        # Código fuente del proyecto
+|   |── assets/                 # Imágenes y íconos del sitio
+│   ├── components/             # Componentes reutilizables |   (Header, Rosas Eternas)
+│   ├── layouts/                # Plantillas y diseños generales
+│   ├── pages/                  # Páginas principales del sitio
+│   ├── styles/                 # Hojas de estilo globales
+├── .gitignore                  # Archivos y carpetas ignoradas en Git
+├── astro.config.mjs            # Configuración de Astro
+├── package.json                # Dependencias del proyecto
+├── pnpm-lock.yaml              # Bloqueo de versiones de PNPM
+├── tsconfig.json               # Configuración de TypeScript
+└── README.md                   # Este documento
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🛠 Instalación y Uso
 
-## 🧞 Commands
+Para ejecutar este proyecto en local, sigue estos pasos:
 
-All commands are run from the root of the project, from a terminal:
+1. Clona este repositorio:
+   ```sh
+   git clone https://github.com/tu-usuario/papeleria-lobato.git
+   cd papeleria-lobato
+   ```
+2. Instala las dependencias:
+   ```sh
+   pnpm install
+   ```
+3. Inicia el servidor de desarrollo:
+   ```sh
+   pnpm run dev
+   ```
+4. Accede al sitio en tu navegador en `http://localhost:4321`
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 👨‍👩‍👦 Contribuciones
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Si deseas contribuir a este proyecto, siéntete libre de enviar un **Pull Request** o abrir un **Issue** en el repositorio.
+
+## 🌍 Enlace al Sitio Web
+
+Proximamente
+
+---
+
+👋 **Gracias por visitar el repositorio de Papelería Lobato!**
+
