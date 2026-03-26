@@ -2,7 +2,7 @@
 
 Sitio web oficial de **Papelería Lobato**, un catálogo en línea para la venta de rosas eternas artesanales. El proyecto presenta productos elaborados a mano con materiales como listón, limpiapipas, fomi y papel crepé, ofreciendo una belleza que perdura en el tiempo.
 
-![Vista previa del sitio](https://papeleria-lobato.vercel.app) <!-- Puedes agregar una captura de pantalla más adelante -->
+![Rosas Eternas](public/assets/Screenshot_20260325_215723.png) <!-- Puedes agregar una captura de pantalla más adelante -->
 
 ## ✨ Características
 
