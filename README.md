@@ -1,64 +1,19 @@
-# 🏢 Papelería Lobato
+# 🌹 Papelería Lobato – Rosas Eternas
 
-Bienvenido al repositorio del sitio web de **Papelería Lobato**, un negocio que ofrece artículos de papelería y un servicio de rosas eternas.
+Sitio web oficial de **Papelería Lobato**, un catálogo en línea para la venta de rosas eternas artesanales. El proyecto presenta productos elaborados a mano con materiales como listón, limpiapipas, fomi y papel crepé, ofreciendo una belleza que perdura en el tiempo.
 
-## 📄 Descripción
+![Vista previa del sitio](https://papeleria-lobato.vercel.app) <!-- Puedes agregar una captura de pantalla más adelante -->
 
-Este es el sitio web oficial de **Papelería Lobato**, desarrollado con las siguientes tecnologías:
+## ✨ Características
 
-- **Astro** ✨: Framework para la generación de sitios web estáticos.
-- **PNPM** 🛠️: Gestor de paquetes rápido y eficiente.
-- **Tailwind CSS** 🛀: Para un diseño moderno y responsivo.
+- **Catálogo visual** de productos con imágenes, descripciones y disponibilidad.
+- **Lista de precios** clara y actualizada.
+- **Sección de contacto** para que los clientes realicen pedidos o consultas.
+- **Diseño responsivo** optimizado para dispositivos móviles y escritorio.
+- **Desplegado en Vercel** para fácil acceso y rendimiento.
 
-## 📚 Estructura del Proyecto
+## 🛠️ Tecnologías utilizadas
 
-```
-/
-├── public/                     # Archivos estáticos
-│                    
-├── src/                        # Código fuente del proyecto
-|   |── assets/                 # Imágenes y íconos del sitio
-│   ├── components/             # Componentes reutilizables |   (Header, Rosas Eternas)
-│   ├── layouts/                # Plantillas y diseños generales
-│   ├── pages/                  # Páginas principales del sitio
-│   ├── styles/                 # Hojas de estilo globales
-├── .gitignore                  # Archivos y carpetas ignoradas en Git
-├── astro.config.mjs            # Configuración de Astro
-├── package.json                # Dependencias del proyecto
-├── pnpm-lock.yaml              # Bloqueo de versiones de PNPM
-├── tsconfig.json               # Configuración de TypeScript
-└── README.md                   # Este documento
-```
-
-## 🛠 Instalación y Uso
-
-Para ejecutar este proyecto en local, sigue estos pasos:
-
-1. Clona este repositorio:
-   ```sh
-   git clone https://github.com/tu-usuario/papeleria-lobato.git
-   cd papeleria-lobato
-   ```
-2. Instala las dependencias:
-   ```sh
-   pnpm install
-   ```
-3. Inicia el servidor de desarrollo:
-   ```sh
-   pnpm run dev
-   ```
-4. Accede al sitio en tu navegador en `http://localhost:4321`
-
-
-## 👨‍👩‍👦 Contribuciones
-
-Si deseas contribuir a este proyecto, siéntete libre de enviar un **Pull Request** o abrir un **Issue** en el repositorio.
-
-## 🌍 Enlace al Sitio Web
-
-Proximamente
-
----
-
-👋 **Gracias por visitar el repositorio de Papelería Lobato!**
-
+- **Frontend:** HTML5, CSS3, JavaScript, Astro y TailwindCSS
+- **Despliegue:** [Vercel](https://vercel.com)
+- **Control de versiones:** Git + GitHub
